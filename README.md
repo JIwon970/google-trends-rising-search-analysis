@@ -1,1 +1,1 @@
-# google_trends_rising_search_analysis
+# google-trends-rising-search-analysis
