@@ -12,7 +12,7 @@ A final written report was also produced to document the workflow, DAX measures,
 - Compare persistence (active weeks) against growth intensity (average percent gain)  
 - Build an interactive Power BI dashboard driven by DAX measures  
 - Summarize findings in a final PDF report
-- 
+
 ---
 
 ## Project Stack
@@ -54,7 +54,6 @@ All metrics and insights were created inside Power BI using DAX.
 
 ## Project Structure
 - `/data` - Cleaned Excel dataset used for Power BI import  
-- `/sql` - Optional validation queries for cross-checking  
 - `/powerbi` - Power BI dashboard file (.pbix)  
 - `/visuals` - Power BI dashboard overview image  
 - `/report` - Final PDF analysis report  
