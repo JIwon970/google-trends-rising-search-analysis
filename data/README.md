@@ -18,8 +18,8 @@ google_trends_rising_search_clean.xlsx
 - percent_gain
 
 ## Notes
-Excel was used only for validation and removal of obviously unusable values.
-No pivot tables, KPI calculations, or analysis were done in Excel.
-All analysis and metrics were created in Power BI using DAX measures.
-This dataset is from a public dataset and is used for portfolio and learning purposes.
+- Excel was used only for validation and removal of obviously unusable values.
+- No pivot tables, KPI calculations, or analysis were done in Excel.
+- All analysis and metrics were created in Power BI using DAX measures.
+- This dataset is from a public dataset and is used for portfolio and learning purposes.
 
