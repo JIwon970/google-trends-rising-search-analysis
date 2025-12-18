@@ -1,8 +1,8 @@
-## Dashboard Preview Images
+# Dashboard Preview Images
 
 This folder contains exported images of the final Power BI dashboard.
 
-# Description
+## Description
 - These images provide a quick preview of the dashboard layout and key visuals.
 - They are used in the main README and may also be referenced in the final PDF report.
 
