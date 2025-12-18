@@ -2,54 +2,65 @@
 
 This project analyzes rising Google search terms using a Power BI–centric workflow, with intentional DAX measure design for trend behavior analysis.
 
-The main objectives of this project were to:
+A final written report was also produced to document the workflow, DAX measures, and key findings.
 
-- Understand how search interest behaves over time (week-to-week patterns)
-- Separate short-term spikes from sustained growth behavior
-- Evaluate rank stability and movement across weeks
-- Compare trends across regions (DMA)
-- Build an interactive Power BI dashboard driven by DAX measures
-- Summarize findings in a final PDF report
+---
+
+## The main objectives of this project were to:
+- Understand how rising search terms behave over time across weeks  
+- Separate short-term spikes from sustained growth behavior  
+- Compare persistence (active weeks) against growth intensity (average percent gain)  
+- Build an interactive Power BI dashboard driven by DAX measures  
+- Summarize findings in a final PDF report  
+
+> Note: Rank volatility was initially considered, but the filtered dataset showed minimal rank movement across weeks.  
+> The final analysis focuses on persistence and growth intensity as clearer differentiators.
 
 ---
 
 ## Project Stack
-BigQuery → CSV Export → Excel (Validation Only) → Power BI (DAX) → GitHub
-- BigQuery: Data source (Google Trends Public Dataset)
-- CSV Export: Local export from BigQuery
-- Excel: Structure check and basic data validation only (no analysis)
-- Power BI: Data model + DAX measures + interactive dashboard
-- GitHub: Portfolio publishing and version control
+**BigQuery → CSV Export → Excel (Validation Only) → Power BI (DAX) → Report (PDF) → GitHub**
+
+- **BigQuery:** Data source (Google Trends Public Dataset)  
+- **CSV Export:** Local export from BigQuery  
+- **Excel:** Structure check and basic data validation only (no analysis)  
+- **Power BI:** Data model + DAX measures + interactive dashboard  
+- **Report (PDF):** Final written analysis and documentation  
+- **GitHub:** Portfolio publishing and version control  
 
 ---
 
 ## Dataset
-- Source: Google Trends Public Dataset (BigQuery)
-- Table: top_rising_terms
-- Time period: 1 year
-- Rows: ~17,000
-- Columns:
-  - week
-  - dma_name
-  - term
-  - rank
-  - percent_gain
+- **Source:** Google Trends Public Dataset (BigQuery)  
+- **Table:** `top_rising_terms`  
+- **Time period:** 1 year  
+- **Rows:** ~17,000  
+- **Columns:**
+  - `week`
+  - `dma_name`
+  - `term`
+  - `rank`
+  - `percent_gain`
 
 ---
 
 ## Excel File Policy (Important)
-- Excel was used only to validate the exported dataset and remove obvious unusable values.
-- No pivot tables, no KPI calculations, and no analysis were done in Excel.
-- All metrics and insights were created inside Power BI using DAX.
+Excel was used only to validate the exported dataset and remove obvious unusable values.
+
+- No pivot tables  
+- No KPI calculations  
+- No analysis in Excel  
+
+All metrics and insights were created inside Power BI using DAX.
 
 ---
 
-## Project Structure  
-/data - Cleaned Excel dataset used for Power BI import  
-/sql - Optional validation queries for cross-checking  
-/powerbi - Power BI dashboard file (.pbix)  
-/visuals - Power BI dashboard overview screenshot  
-/report - Final PDF analysis report  
+## Project Structure
+- `/data` - Cleaned Excel dataset used for Power BI import  
+- `/sql` - Optional validation queries for cross-checking  
+- `/powerbi` - Power BI dashboard file (.pbix)  
+- `/visuals` - Power BI dashboard overview image  
+- `/report` - Final PDF analysis report  
 
 Each folder contains its own README file for detailed explanations.
 
@@ -57,51 +68,62 @@ Each folder contains its own README file for detailed explanations.
 
 ## Power BI Analysis Summary
 All analysis was performed in Power BI using DAX measures.
-- Interactive filtering supports insight exploration by:  
-  - DMA (region)
-  - Week
-  - Search term
-- Trend behavior analysis focuses on:  
-  - Sustained growth vs short-lived spikes
-  - Rank stability vs volatile movement
-  - Week-to-week change patterns and momentum
-  - Regional differences in trend behavior
 
-Power BI file location:  
-/powerbi/Google_Trends_Rising_Search_Dashboard.pbix
+### Dashboard focus
+The dashboard is designed to help identify whether a rising
+- **A short-lived spike** (high intensity but low persistence), or  
+- **A sustained rising trend** (active across multiple weeks)
+
+### Key metrics used
+- **Active Weeks (Persistence)**  
+- **Average Percent Gain (Growth Intensity)**  
+- **Average Rank (Context / Top 20 selection)**  
+
+### Interactive filtering
+The final dashboard uses minimal slicers to keep exploration clean:
+- **Week**
+
+> Terms are selected as **Top 20 by Average Rank**, then analyzed using persistence and intensity.
+
+**Power BI file location:**  
+`/powerbi/Google_Trends_Rising_Search_Dashboard.pbix`
 
 ---
 
-## Final PDF Report
-A full project report was created to summarize:
-- Dataset scope and validation steps
-- Power BI modeling approach
-- DAX measure logic (key measures used)
-- Main insights and interpretations
-- Dashboard overview and usage notes
+## Report Writing (Included)
+A final PDF report was written as the formal documentation of this project.
 
-PDF report location:  
-/report/Google_Trends_Rising_Search_Analysis_Report.pdf
+### What the report covers
+- Dataset scope, filters, and validation steps  
+- Data preparation workflow (BigQuery export → Excel validation → Power BI import)  
+- Data model design and key DAX measures (with explanations)  
+- Dashboard design decisions and usage notes  
+- Key findings and interpretation (spikes vs sustained trends)  
+- Limitations and next-step improvement ideas  
+
+**PDF report location:**  
+`/report/Google_Trends_Rising_Search_Analysis_Report.pdf`
 
 ---
 
 ## Key Skills Demonstrated
-- Working with real-world public datasets (BigQuery export workflow)
-- Data validation and cleaning checks in Excel (validation only)
-- Power BI data modeling and interactive dashboard building
-- Intentional DAX measure design (filter-aware metrics)
-- Trend behavior analysis (patterns, stability, and momentum)
-- GitHub repository structuring and documentation
+- Working with real-world public datasets (BigQuery export workflow)  
+- Data validation and cleaning checks in Excel (validation only)  
+- Power BI data modeling and interactive dashboard building  
+- Intentional DAX measure design (filter-aware metrics)  
+- Trend behavior analysis using persistence vs intensity  
+- Report writing and insight communication (PDF deliverable)  
+- GitHub repository structuring and documentation  
 
 ---
 
 ## Notes
-- The raw BigQuery CSV export is not included in this repository.
-- This project is for educational and professional demonstration only.
+- The raw BigQuery CSV export is not included in this repository.  
+- This project is for educational and professional demonstration only.  
 
 ---
 
 ## Author
-Analyst: Jiwon Yang  
-Project: Google Trends Rising Search Analysis  
-Year: 2025  
+- **Analyst:** Jiwon Yang  
+- **Project:** Google Trends Rising Search Analysis  
+- **Year:** 2025  
