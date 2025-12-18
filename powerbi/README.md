@@ -1,12 +1,12 @@
-# Power BI Dashboard File
+# Power BI 
 
-This folder contains the Power BI dashboard file for the Google Trends rising search analysis.
+This folder contains the Power BI file for the Google Trends rising search analysis.
 
 ## Description
-The cleaned dataset from the /data folder was imported into Power BI.
-A data model was created and all metrics were built using DAX measures.
-The final dashboard focuses on trend behavior analysis:
-persistence (active weeks) vs growth intensity (average percent gain).
+- The cleaned dataset from the /data folder was imported into Power BI.
+- A data model was created and all metrics were built using DAX measures.
+- The final dashboard focuses on trend behavior analysis:
+  - persistence (active weeks) vs growth intensity (average percent gain).
 
 ## File Name
 `Google_Trends_Rising_Search_Dashboard.pbix`
