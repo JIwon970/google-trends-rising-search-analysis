@@ -11,11 +11,8 @@ A final written report was also produced to document the workflow, DAX measures,
 - Separate short-term spikes from sustained growth behavior  
 - Compare persistence (active weeks) against growth intensity (average percent gain)  
 - Build an interactive Power BI dashboard driven by DAX measures  
-- Summarize findings in a final PDF report  
-
-> Note: Rank volatility was initially considered, but the filtered dataset showed minimal rank movement across weeks.  
-> The final analysis focuses on persistence and growth intensity as clearer differentiators.
-
+- Summarize findings in a final PDF report
+- 
 ---
 
 ## Project Stack
@@ -82,8 +79,6 @@ The dashboard is designed to help identify whether a rising
 ### Interactive filtering
 The final dashboard uses minimal slicers to keep exploration clean:
 - **Week**
-
-> Terms are selected as **Top 20 by Average Rank**, then analyzed using persistence and intensity.
 
 **Power BI file location:**  
 `/powerbi/Google_Trends_Rising_Search_Dashboard.pbix`
