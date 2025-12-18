@@ -3,12 +3,12 @@
 This folder contains the cleaned Google Trends rising search dataset used for Power BI analysis.
 
 ## Description
-The original dataset was exported from BigQuery as a CSV file.
-Basic validation and cleaning were performed in Excel (validation only).
-The final cleaned dataset was saved as an Excel file and imported into Power BI.
+- The original dataset was exported from BigQuery as a CSV file.
+- Basic validation and cleaning were performed in Excel (validation only).
+- The final cleaned dataset was saved as an Excel file and imported into Power BI.
  
 ## File Name
-google_trends_rising_search_clean.xlsx
+`google_trends_rising_search_clean.xlsx`
 
 ## Columns Included
 - week
